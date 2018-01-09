@@ -15,3 +15,10 @@ dependencies {
     testCompile('org.seleniumhq.selenium:selenium-java:3.7.0')
     testCompile group: 'org.testng', name: 'testng', version: '6.11'
 }
+
+task test1 (type: Test){
+    // include("./test/java/seleniumTesting/Test2Class")
+    include("./test/java/seleniumTesting/TestClass")
+
+
+}
