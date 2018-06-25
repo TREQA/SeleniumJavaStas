@@ -13,6 +13,8 @@ import seleniumTesting.PageObjects.RegisterPage;
 import seleniumTesting.PageObjects.webElements;
 import seleniumTesting.Users;
 
+import com.sun.org.apache.regexp.internal.RE;
+
 public class Test2Class {
 
     public WebDriver wd ;

@@ -1,7 +1,9 @@
 group 'AI'
 version '1.0-SNAPSHOT'
 
+
 apply plugin: 'java'
+//apply plugin: 'org.unbroken-dome.test-sets'
 
 sourceCompatibility = 1.8
 
@@ -19,3 +21,28 @@ dependencies {
 test{
     useTestNG()
 }
+
+//project.task("Task2")
+//task  Task1 (type: test){
+//
+//}
+
+task singeTest(type :Test,  dependsOn: testClasses){
+
+    filter{
+        includeTestsMatching '*.Test2Class'
+    }
+}
+/*test{
+    filter{
+        includeTestsMatching '*Test2Class'
+    }
+}*/
+//testSets{
+//    integrationsTests{
+//        dirName = 'Test2Class'
+//    }
+//}
+
+
+
