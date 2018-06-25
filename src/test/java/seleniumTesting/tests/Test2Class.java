@@ -71,6 +71,7 @@ public class Test2Class {
             RegisterPage.passwordInput(wd).sendKeys("password");
             RegisterPage.confirmPasswordInput(wd).sendKeys("password");
             RegisterPage.submitButton(wd).click();
+
         }catch (Exception e) {
            // System.out.println(e);
             System.err.println("Caught Exception: " + e.getMessage());
